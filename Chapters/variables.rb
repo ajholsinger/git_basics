@@ -35,9 +35,16 @@ end
 =end
 
 
+x = 0
+3.times do
+    x += 1
+    x = y
+end
+puts y # This should give an error.
+
 y = 0
 3.times do
     y += 1
     x = y
 end
-puts x # This should be 3
+puts x # This should give an error
